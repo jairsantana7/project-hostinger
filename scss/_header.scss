@@ -1,0 +1,57 @@
+header {
+  position: fixed;
+  top: 0;
+  height: 11.9rem;
+  width: 100%;
+  background-color: $brand-purple;
+  display: flex;
+  justify-content: center;
+  .container {
+    @include flex(row, center, space-between);
+    align-content: center;
+    nav ul,
+    nav ul a {
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      color: $white;
+      font-weight: normal;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
+    nav ul a img {
+      height: 1.7rem;
+      margin-right: 1.4rem;
+    }
+    nav ul {
+      gap: 20px;
+
+      li {
+        &:not(:first-child) {
+          margin-left: 5.6rem;
+        }
+      }
+    }
+  }
+
+  @include responsive(600px) {
+    .container {
+      justify-content: center;
+      justify-items: start;
+      nav {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive(480px) {
+    height: 8rem;
+    .logo {
+      img {
+        max-width: 14rem;
+      }
+    }
+  }
+}
