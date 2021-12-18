@@ -6,31 +6,35 @@ header {
   background-color: $brand-purple;
   display: flex;
   justify-content: center;
+  z-index: 100;
   .container {
     @include flex(row, center, space-between);
-    align-content: center;
-    nav ul,
-    nav ul a {
-      display: flex;
-      justify-items: center;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
-      color: $white;
-      font-weight: normal;
-      font-size: 1.6rem;
-      line-height: 1.9rem;
-    }
-    nav ul a img {
-      height: 1.7rem;
-      margin-right: 1.4rem;
-    }
-    nav ul {
-      gap: 20px;
+  }
+  align-content: center;
+  nav ul {
+    display: flex;
+    align-items: center;
 
-      li {
-        &:not(:first-child) {
-          margin-left: 5.6rem;
+    li {
+      display: flex;
+      align-items: center;
+      margin-left: 5.6rem;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: 1.6rem;
+          color: $white;
+          font-weight: bold;
+          line-height: 1.9rem;
+        }
+
+        img {
+          width: 100%;
+          max-width: 1.8rem;
+          margin-right: 1.4rem;
         }
       }
     }

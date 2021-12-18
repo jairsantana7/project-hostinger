@@ -20,6 +20,13 @@ html img {
   width: 100%;
 }
 
+@media (max-width: 1280px) {
+  /* line 12, ../../CursoJS/React/codeboost/projeto-hosting/scss/_reset.scss */
+  html {
+    font-size: 55%;
+  }
+}
+
 /* line 1, ../../CursoJS/React/codeboost/projeto-hosting/scss/_grid.scss */
 .container {
   width: 100%;
@@ -37,54 +44,59 @@ header {
   background-color: #5f3ca1;
   display: flex;
   justify-content: center;
+  z-index: 100;
+  align-content: center;
 }
 
-/* line 9, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+/* line 10, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
 header .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  align-content: center;
 }
 
-/* line 12, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
-header .container nav ul,
-header .container nav ul a {
+/* line 14, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+header nav ul {
   display: flex;
-  justify-items: center;
-  justify-content: center;
-  align-content: center;
   align-items: center;
-  color: #ffff;
-  font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
 }
 
-/* line 24, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
-header .container nav ul a img {
-  height: 1.7rem;
-  margin-right: 1.4rem;
-}
-
-/* line 28, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
-header .container nav ul {
-  gap: 20px;
-}
-
-/* line 32, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
-header .container nav ul li:not(:first-child) {
+/* line 18, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+header nav ul li {
+  display: flex;
+  align-items: center;
   margin-left: 5.6rem;
 }
 
+/* line 23, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+header nav ul li a {
+  display: flex;
+  align-items: center;
+}
+
+/* line 27, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+header nav ul li a span {
+  font-size: 1.6rem;
+  color: #ffff;
+  font-weight: bold;
+  line-height: 1.9rem;
+}
+
+/* line 34, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+header nav ul li a img {
+  width: 100%;
+  max-width: 1.8rem;
+  margin-right: 1.4rem;
+}
+
 @media (max-width: 600px) {
-  /* line 40, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+  /* line 44, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
   header .container {
     justify-content: center;
     justify-items: start;
   }
-  /* line 43, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+  /* line 47, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
   header .container nav {
     display: none;
   }
@@ -95,7 +107,7 @@ header .container nav ul li:not(:first-child) {
   header {
     height: 8rem;
   }
-  /* line 52, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
+  /* line 56, ../../CursoJS/React/codeboost/projeto-hosting/scss/_header.scss */
   header .logo img {
     max-width: 14rem;
   }
@@ -121,6 +133,291 @@ header .container nav ul li:not(:first-child) {
 .btn:hover {
   background-color: #5f3ca1;
   color: #ffbf00;
+}
+
+/* line 5, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero {
+  background: #de6161;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #5f3ca1, #4dcbd3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #5f3ca1, #4dcbd3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  margin-top: 10.5rem;
+  padding-bottom: 82px;
+}
+
+/* line 23, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 26, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 30, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text .btn {
+  width: 240px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 8.6rem;
+}
+
+/* line 41, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text .btn:hover {
+  border: solid 2px #ffbf00;
+}
+
+/* line 46, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text h1 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 120%;
+  max-width: 55rem;
+  margin-top: 3.9rem;
+  margin-bottom: 1.6rem;
+  color: #ffff;
+}
+
+/* line 57, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text p {
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #ffff;
+  max-width: 55rem;
+  margin-bottom: 2.2rem;
+}
+
+/* line 66, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text .read-more {
+  display: flex;
+  width: 205px;
+  line-height: 1.9rem;
+  align-items: center;
+  justify-content: space-between;
+  transition: all, 0.3s;
+}
+
+/* line 74, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text .read-more img {
+  background-color: rgba(124, 90, 186, 0.4);
+  width: 3.3rem;
+  height: 3.3rem;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+}
+
+/* line 81, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text .read-more span {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #ffff;
+}
+
+/* line 87, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text .read-more:hover span {
+  color: #ffbf00;
+  transition: all, 0.3s;
+}
+
+/* line 92, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .text .read-more:hover img {
+  transform: rotate(-90deg);
+  transition: all, 0.3s;
+}
+
+/* line 99, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-hero .container .img img {
+  position: relative;
+  bottom: -125px;
+}
+
+@media (max-width: 800px) {
+  /* line 106, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero .container {
+    flex-direction: column;
+  }
+  /* line 109, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero .text {
+    max-width: 100%;
+    text-align: center;
+  }
+  /* line 112, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero .text h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+  /* line 117, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero .text .btn,
+  .s-hero .text .read-more {
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 123, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero .img img {
+    display: block;
+    margin: 0 auto;
+    left: -30px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 5, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero {
+    margin-top: 8rem;
+  }
+  /* line 134, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero .container .img img {
+    bottom: -100px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 5, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero {
+    margin-top: 8rem;
+  }
+  /* line 144, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-hero .container .img img {
+    bottom: -84px;
+  }
+}
+
+/* line 151, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources {
+  margin-bottom: 10rem;
+}
+
+/* line 153, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .top {
+  padding-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.2rem;
+}
+
+/* line 159, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .top h2 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 130%;
+  max-width: 502px;
+}
+
+/* line 166, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .top p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+/* line 174, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* line 179, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li {
+  max-width: 100%;
+  padding: 41px 41px 68px 41px;
+}
+
+/* line 184, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li .icon {
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  background-color: rgba(124, 90, 186, 0.1);
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+/* line 190, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li .icon img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* line 196, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li .info {
+  margin-top: 3rem;
+}
+
+/* line 198, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li .info h4 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #5f3ca1;
+  margin-bottom: 2rem;
+}
+
+/* line 205, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li .info p {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 165%;
+  color: #5e5570;
+}
+
+/* line 213, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li:first-child {
+  background: rgba(197, 190, 220, 0.1);
+  border-radius: 1.2rem;
+}
+
+/* line 216, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li:first-child .icon {
+  background-color: #ffff;
+}
+
+/* line 220, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+.s-resources .s-card li:not(:first-child) {
+  border-bottom: solid 3px rgba(95, 60, 161, 0.1);
+}
+
+@media (max-width: 800px) {
+  /* line 228, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-resources .s-card ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 239, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-resources .top {
+    padding-top: 5rem;
+  }
+  /* line 243, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-resources .s-card ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* line 247, ../../CursoJS/React/codeboost/projeto-hosting/scss/_home.scss */
+  .s-resources .s-card ul li {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
